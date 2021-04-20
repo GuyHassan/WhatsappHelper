@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WhatsappHelper.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Whatsapp Helper</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div>
+                <h1>Whatsapp Helper</h1>
+                <p>הקש מספר טלפון על מנת לעבור לשיחה איתו</p>
+            </div>
+            <div>
+                <!-- <form> -->
+                <input type="text" id="inputId" placeholder="Enter Number">
+                <button onclick="validateNumber()">עבור</button>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        const validateNumber = () => {
+            const getNum = document.getElementById("inputId").value
+            if (getNum !== '') {
+                const numberPattern = /\d+/g;
+                const validateNum = getNum.match(numberPattern).join('')
+                const URL = `https://api.whatsapp.com/send?phone=972${validateNum}`
+                window.open(URL)
+            }
+            else {
+                alert("Must Enter Number To Continue !")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
