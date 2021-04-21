@@ -8,13 +8,22 @@ body {
 
 .container {
     text-align: center;
-    margin: 20vh auto;
+    margin: 15vh auto;
     width: 70%;
     height: 50vh;
     border-radius: 10px;
     background-color: rgba(12, 12, 12, 0.6);
     border: 1px solid rgb(149, 253, 149);
     padding: 10px;
+}
+
+
+
+.content {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: 15vh auto;
 }
 
 .create-by {
@@ -32,13 +41,6 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: rgb(15, 221, 152);
-}
-
-.content {
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-    text-align: center;
-    margin: 15vh auto;
 }
 
 input[type=text] {
@@ -76,12 +78,18 @@ button:hover {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     input[type=text] {
         width: 50%;
     }
 
     .create-by {
         width: 80%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .content {
+        margin: 19vh auto
     }
 }
