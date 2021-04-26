@@ -80,7 +80,6 @@ button:hover {
 
 .create-by a:hover {
     color: rgb(15, 221, 152, 0.8);
-    /* transform: scale(1.2); */
 }
 
 img {
@@ -103,9 +102,3 @@ img {
         width: 100%;
     }
 }
-
-/* @media (min-width: 1600px) {
-    .content {
-        margin: 20vh auto
-    }
-} */
