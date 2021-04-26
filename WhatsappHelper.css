@@ -1,5 +1,5 @@
 body {
-    background: url(backgroundWhatsapp.jpg) no-repeat center top fixed;
+    background: url(pexels-hasan-albari-1202575.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,23 +7,25 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 15vh auto;
-    width: 70%;
+    margin: 10vh auto;
     height: 50vh;
-    border-radius: 10px;
-    background-color: rgba(12, 12, 12, 0.6);
-    border: 1px solid rgb(149, 253, 149);
-    padding: 10px;
 }
 
 
-
 .content {
+    border-radius: 10px;
+    background-color: rgba(12, 12, 12, 0.6);
+    border: 1px solid rgb(149, 253, 149);
+    padding: 10% 10% 10% 10%;
+    width: 60%;
+    margin-bottom: 15px;
+    margin: auto;
+    margin-bottom: 15px;
     color: white;
     font-family: 'Varela Round', sans-serif;
-    text-align: center;
-    margin: 15vh auto;
 }
 
 .create-by {
@@ -76,20 +78,34 @@ button:hover {
     background-color: rgb(49, 49, 49);
 }
 
+.create-by a:hover {
+    color: rgb(15, 221, 152, 0.8);
+    /* transform: scale(1.2); */
+}
+
+img {
+    margin: 10px;
+    width: 40px;
+}
 
 
 @media only screen and (max-width: 800px) {
     input[type=text] {
-        width: 50%;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .create-by {
         width: 80%;
     }
-}
 
-@media (min-width: 1800px) {
-    .content {
-        margin: 19vh auto
+    .container {
+        width: 100%;
     }
 }
+
+/* @media (min-width: 1600px) {
+    .content {
+        margin: 20vh auto
+    }
+} */
