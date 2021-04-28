@@ -8,4 +8,4 @@ You will start corresponding without saving the phone number in your contacts
 
 # On Mobile
 
-![whatsappDesktop](https://user-images.githubusercontent.com/33221427/116392270-eb9c9d80-a828-11eb-8fa2-43b78599d255.gif)
+https://user-images.githubusercontent.com/33221427/116392613-4e8e3480-a829-11eb-8eb9-8a5444b6b996.mp4
